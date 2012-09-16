@@ -28,12 +28,12 @@ BuildArch:	noarch
 %description	doc
 Documents, RDoc & RI documentation for %{name}.
 
-%package    devel                                                                                                                                                                                              
-Summary:    Development files for %{name}
-Group:      Development/Ruby
+#%package    devel                                                                                                                                                                                              
+#Summary:    Development files for %{name}
+#Group:      Development/Ruby
 
-%description	devel
-Development files for %{name}.
+#%description	devel
+#Development files for %{name}.
 
 %prep
 %setup -q
@@ -58,8 +58,8 @@ Development files for %{name}.
 %files doc
 %doc %{ruby_gemdir}/doc/%{rbname}-%{version}
 
-%files devel
-%{ruby_sitearchdir}/*.h
+#%files devel
+#%{ruby_sitearchdir}/*.h
 
 %changelog
 
