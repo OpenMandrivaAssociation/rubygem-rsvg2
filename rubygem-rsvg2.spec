@@ -15,6 +15,7 @@ BuildRequires:  rubygem(glib2)
 BuildRequires:  rubygem-glib2-devel
 BuildRequires:  ruby-devel
 BuildRequires:  pkgconfig(librsvg-2.0)
+Obsoletes:      ruby-rsvg2
 
 %description
 Ruby binding of librsvg-2.x.
