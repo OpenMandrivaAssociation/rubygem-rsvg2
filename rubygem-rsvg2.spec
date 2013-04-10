@@ -1,7 +1,7 @@
 # Generated from pkg-config-1.1.4.gem by gem2rpm5 -*- rpm-spec -*-          
 %define	rbname	rsvg2
 
-Summary:	Ruby binding of librsvg-2.x.
+Summary:	Ruby binding of librsvg-2.x
 Name:		rubygem-%{rbname}
 
 Version:	1.1.5
