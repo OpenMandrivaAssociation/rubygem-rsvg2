@@ -5,7 +5,7 @@ Summary:	Ruby binding of librsvg-2.x.
 Name:		rubygem-%{rbname}
 
 Version:	1.1.5
-Release:	1
+Release:	2
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 URL:		http://ruby-gnome2.sourceforge.jp/
@@ -15,7 +15,7 @@ BuildRequires:  rubygem(glib2)
 BuildRequires:  rubygem-glib2-devel
 BuildRequires:  ruby-devel
 BuildRequires:  pkgconfig(librsvg-2.0)
-Obsoletes:      ruby-rsvg2
+%rename      ruby-rsvg2
 
 %description
 Ruby binding of librsvg-2.x.
