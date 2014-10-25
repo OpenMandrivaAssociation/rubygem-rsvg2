@@ -20,8 +20,8 @@ BuildRequires:	rubygem(glib2)
 Ruby binding of librsvg-2.x.
 
 %files
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
+%{gem_dir}/gems/%{rbname}-%{version}/lib/*.rb
+%{gem_dir}/specifications/%{rbname}-%{version}.gemspec
 %{ruby_sitearchdir}/%{rbname}.so
 
 #----------------------------------------------------------------------------
@@ -36,7 +36,7 @@ BuildArch:	noarch
 Documents, RDoc & RI documentation for %{name}.
 
 %files doc
-%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
+%doc %{gem_dir}/doc/%{rbname}-%{version}
 
 #----------------------------------------------------------------------------
 
