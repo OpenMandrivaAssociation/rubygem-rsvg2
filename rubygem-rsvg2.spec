@@ -1,33 +1,44 @@
-# Generated from pkg-config-1.1.4.gem by gem2rpm5 -*- rpm-spec -*-          
-%define	rbname	rsvg2
+%define rbname rsvg2
 
 Summary:	Ruby binding of librsvg-2.x
 Name:		rubygem-%{rbname}
-
-Version:	1.1.5
-Release:	2
+Version:	2.2.0
+Release:	1
+License:	LGPLv2.1+
 Group:		Development/Ruby
-License:	GPLv2+ or Ruby
-URL:		http://ruby-gnome2.sourceforge.jp/
+Url:		http://ruby-gnome2.sourceforge.jp/
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
-BuildRequires:	rubygems 
-BuildRequires:  rubygem(glib2)
-BuildRequires:  rubygem-glib2-devel
-BuildRequires:  ruby-devel
-BuildRequires:  pkgconfig(librsvg-2.0)
-%rename      ruby-rsvg2
+BuildRequires:	rubygem-cairo-devel
+BuildRequires:	rubygem-glib2-devel
+BuildRequires:	pkgconfig(cairo)
+BuildRequires:	pkgconfig(librsvg-2.0)
+BuildRequires:	pkgconfig(ruby)
+BuildRequires:	rubygem(cairo)
+BuildRequires:	rubygem(glib2)
 
 %description
 Ruby binding of librsvg-2.x.
 
-%package	doc
+%files
+%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
+%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
+%{ruby_sitearchdir}/%{rbname}.so
+
+#----------------------------------------------------------------------------
+
+%package doc
 Summary:	Documentation for %{name}
-Group:		Books/Computer books
+Group:		Documentation
 Requires:	%{name} = %{EVRD}
 BuildArch:	noarch
 
-%description	doc
+%description doc
 Documents, RDoc & RI documentation for %{name}.
+
+%files doc
+%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
+
+#----------------------------------------------------------------------------
 
 %prep
 %setup -q
@@ -37,14 +48,4 @@ Documents, RDoc & RI documentation for %{name}.
 
 %install
 %gem_install
-
-%files
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
-%{ruby_sitearchdir}/%{rbname}.so
-
-%files doc
-%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
-
-%changelog
 
