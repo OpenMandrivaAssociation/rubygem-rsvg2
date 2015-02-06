@@ -3,7 +3,7 @@
 Summary:	Ruby binding of librsvg-2.x
 Name:		rubygem-%{rbname}
 Version:	2.2.0
-Release:	1
+Release:	2
 License:	LGPLv2.1+
 Group:		Development/Ruby
 Url:		http://ruby-gnome2.sourceforge.jp/
