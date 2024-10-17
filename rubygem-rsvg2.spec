@@ -6,7 +6,7 @@ Version:	2.2.0
 Release:	2
 License:	LGPLv2.1+
 Group:		Development/Ruby
-Url:		http://ruby-gnome2.sourceforge.jp/
+Url:		https://ruby-gnome2.sourceforge.jp/
 Source0:	http://rubygems.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygem-cairo-devel
 BuildRequires:	rubygem-glib2-devel
